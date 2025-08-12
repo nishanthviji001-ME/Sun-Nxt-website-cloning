@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MOONNXT - Home</title>
+  <link rel="website icon" href="../image/Untitled design.jpg">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+     body {
+      background-color:#151522;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #262626;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      color: #8f1537;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: #fff ;
+      font-weight: 500;
+    }
+    .nav-link:hover{
+      color: #8f1537;
+    }
+
+
+.hero-section {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: auto;
+  padding-top: 100px;
+}
+
+.movie-card, .category-card {
+  background-color: #1a1a1a;
+  border: none;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.movie-card img, .category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover img, .category-card:hover img {
+  transform: scale(1.05);
+}
+
+.footer{
+      background-color: #262626;
+       box-shadow: 10px 5px 10px rgba(0,0,0,0.1);
+    }
+    .footer-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ff4d4d;
+}
+.footer-links a {
+  margin: 0 10px;
+  color: #888;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #ff4d4d;
+}
+h5{
+  color: #fff;
+}
+.bi{
+    color: #fff;
+}
+.navbar-toggler{
+color: #fff;
+}
+.card-price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d71921;
+    }
+    .card {
+      border: 1px solid #ddd;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1{
+    color: #a01a45;
+}
+    .btn-subscribe {
+      background-color: #a01a45;
+      border: none;
+    }
+    .btn-subscribe:hover {
+      background-color: #a01a45;
+    }
+    .carousel{
+justify-items: center;
+    }
+</style>
+<body class=" text-white">
+
+ <nav class="navbar navbar-expand-lg">
+    <div class="container">
+       <a class="navbar-brand" href="#">
+      <img src="../image/Untitled design.jpg" alt="Bootstrap" width="40" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="../bootstrap/home.html">Home</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#">Movies</a>
+        </li>
+         
+         <li class="nav-item">
+          <a class="nav-link" href="./categories.html">Categories</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Languages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Tamil</a></li>
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+            <li><a class="dropdown-item" href="#">Telugu</a></li>
+            <li><a class="dropdown-item" href="#">Kannada</a></li>
+            <li><a class="dropdown-item" href="#">Malayalam</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="btn btn-danger ms-5" type="submit">Apply</button></li>
+          </ul>
+        </li>
+        
+      </ul>
+              <button class="btn btn-outline-danger rounded-5"><a class="nav-link" href="C:\Users\New\Desktop\fullstack html\bootstrap\search.html"><i class="bi bi-search"></i></a></button>
+     <button class="btn "><a class="nav-link" href="C:\Users\New\Desktop\fullstack html\bootstrap\loginsunnxt.html"><i class="bi bi-person-fill"></i></a></button>
+<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Subsribe
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Subsribe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container my-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Monthly Plan -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center p-3">
+          <h5 class="card-title">Monthly Plan</h5>
+          <p class="card-price">₹99</p>
+          <ul class="list-unstyled mb-3">
+            <li>1 Month Access</li>
+            <li>HD Streaming</li>
+            <li>Ad-Free</li>
+            <li>Single Device</li>
+          </ul>
+          <button class="btn btn-subscribe text-white">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Quarterly Plan -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center p-3 ">
+          <h5 class="card-title">Quarterly Plan</h5>
+          <p class="card-price">₹249</p>
+          <ul class="list-unstyled mb-3">
+            <li>3 Months Access</li>
+            <li>HD Streaming</li>
+            <li>Ad-Free</li>
+            <li>2 Devices</li>
+          </ul>
+          <button class="btn btn-subscribe text-white">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Yearly Plan -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center p-3">
+          <h5 class="card-title">Yearly Plan</h5>
+          <p class="card-price">₹799</p>
+          <ul class="list-unstyled mb-3">
+            <li>12 Months Access</li>
+            <li>HD Streaming</li>
+            <li>Ad-Free</li>
+            <li>Up to 4 Devices</li>
+          </ul>
+          <button class="btn btn-subscribe text-white">Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  </nav>
+
+
+  <div class="carousel m-5">
+  <div id="carouselExampleAutoplaying" class="carousel slide w-50 sm-w-100" data-bs-ride="carousel">
+  <div class="carousel-inner rounded-3">
+    <div class="carousel-item active">
+      <img src="../image/kaliyugam.jpg" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Tamil | Psychological,Thriller | 1 hr 50 min | 2025</p>
+        <h5><button class="btn btn-outline-danger text-white">Play now</button></h5>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="../image/js.jpg" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+<p>Tamil | Psychological,Thriller | 1 hr 50 min | 2025</p>        <h5><button class="btn btn-outline-danger text-white">Play now</button></h5>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="../image/garudan.jpg" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+<p>Tamil | Psychological,Thriller | 1 hr 50 min | 2025</p>        <h5><button class="btn btn-outline-danger text-white">Play now</button></h5>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="../image/kn.jpg" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+<p>Tamil | Psychological,Thriller | 1 hr 50 min | 2025</p>        <h5><button class="btn btn-outline-danger text-white">Play now</button></h5>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="../image/lll.jpg" class="d-block w-100 rounded-3" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+<p>Tamil | Romance,Drama | 2 hr 10 min | 2021</p>        <h5><button class="btn btn-outline-danger text-white">Play now</button></h5>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+   <section class="container my-5">
+    <h2 class="mb-4">Featured Movies</h2>
+    <div class="row g-4">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_7thSense_101255_9f504c73-b375-469b-b747-f88cc982b6fd.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_CaptainMiller_181904_c58f0e89-4e22-4785-a7ef-92e3f543fc11.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_Doctor_154914_98fbaeca-fb23-48af-b0ee-1e55c6bec04d.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_Manmadhan_8789_6553753b-37fc-4f13-b06e-6221c98ae96a.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_Puli_7224_fb5b15c8-421c-45cf-928a-5ceb9ec77936.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="card movie-card">
+          <img src="../image/250x375_Petta_127025_42b02c98-f6f2-40f6-a438-b82530d55ada.jpg" class="card-img-top" alt="Movie 1" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container my-4">
+    <h4 class=" name mb-3"> Rajini Comedy Clips</h4>
+    <div class="row g-4">
+     
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/640x360_ChandramukhiComedyScene_131397_f005c292-8231-4435-a950-d6ad605fbb40 - Copy.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 ">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/640x360_EnthiranComedyScene_129607_5e3c923c-b529-4445-8aa3-98fabd1457ca - Copy.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/640x360_MuthuComedyScene_129618_04aa01b3-b416-4ebd-b0c3-72aa73440ee5 - Copy.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/640x360_PettaComedyScene_129615_a2c67dd6-4d17-4f1a-b0ab-8c762f5a059c.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+     </div></div>
+  <div class="container my-4">
+    <h4 class=" name mb-3">Popular TV shows</h4>
+    <div class="row g-4">
+     
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/aadugalam.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/poongodi.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/nrt.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/Ethirneechal_(TV_series).jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/vinodini.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-sm-4 col-md-3">
+        <div class="card bg-black border-2 tv-card">
+          <img src="../image/annam.jpg" class="card-img-top" alt="Movie 1">
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+
+
+ <footer class="footer py-2 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 mb-3">
+       <a class="navbar-brand" href="#">
+      <img src="../image/Untitled design.jpg" alt="Bootstrap" width="40" height="40">
+    </a>
+      </div>
+      <div class="footer-links col-md-4 mb-3">
+        <a href="./about us.html">About us</a>|
+        <a href="#">Privacy Policy </a>|
+        <a href="#">Terms of Use</a>|
+        <a href="#">FAQs</a>|
+        <a href="./feedback.html">Feedback</a>|
+        <a href="#">Blog</a>|
+        <a href="#">GDPR policy</a>|
+        <a href="#">Cookies Policies</a>
+      </div>
+
+      <div class="col-md-3 mb-1">
+        <h5>Download the app</h5>
+       <a class="navbar-brand" href="#">
+      <img src="../image/footer_appstore_badge.png" alt="Bootstrap">
+    </a>
+    <a class="navbar-brand" href="#">
+      <img src="../image/footer_playstore_badge.png" alt="Bootstrap" >
+    </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-3 mb-1">
+        <h5>Follow Us</h5>
+        <a href="#" class="me-3 text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="me-3 text-white"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="me-3 text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-3 text-white"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
